@@ -27,7 +27,7 @@
 
 #### 项目整体架构
 
-![1547120255663](.\assets\1547120255663.png)
+![1547120255663](assets/1547120255663.png)
 
 
 
@@ -107,7 +107,7 @@ yarn add react-router
 
 
 
-## 目录结构（目录只是添加结构，并没有这些代码）
+## 目录结构
 
 ```js
 +-- build/                                  ---打包的文件目录
@@ -145,6 +145,86 @@ yarn add react-router
 --- .eslintrc                               ---自定义eslint配置文件，包括增加的react jsx语法限制
 --- package.json                                    
 ```
+
+
+
+## React生命周期介绍
+
+基础介绍请看本目录的文件《React生命周期.md》
+
+在项目中的代码示例：
+
+src/index.js
+
+~~~
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import ReactLife from './page/demo/ReactLife';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(<ReactLife />, document.getElementById('root'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
+
+~~~
+
+src/page/demo/ReactLife.js
+
+~~~
+/*生命周期函数测试
+实现：通过点击按钮改变state值
+知识点：
+1.看它俩的this及箭头函数的使用方法
+   onClick={this.handleAdd} ---  handleAdd=()=>{箭头函数的this是组件的实例}
+   onClick={this.handleClick.bind(this)} ---  handleClick(){这个非箭头函数的this不是组件的实例，
+    所以在调用的时候要用到.bind(this)}
+   
+
+ */
+import React from 'react'
+
+export default class ReactLife extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            count:0
+        };
+    }
+
+    handleAdd=()=>{
+        this.setState({
+            count:this.state.count+1
+        })
+    }
+    handleClick(){
+        this.setState({
+            count:this.state.count+1
+        })
+    }
+
+    render(){
+        let style = {padding:20}
+        return (
+            <div style={style}>
+                <p>React生命周期介绍</p>
+                <button onClick={this.handleAdd}>点击一下</button>
+                <button onClick={this.handleClick.bind(this)}>点击一下</button>
+                <p>{this.state.count}</p>
+            </div>
+        )
+    }
+}
+~~~
+
+
+
+
+
+
 
 
 
