@@ -1,5 +1,7 @@
 /*生命周期函数测试
 实现：通过点击按钮改变state值
+ReactLife给Child传参数
+
 知识点：
 1.看它俩的this及箭头函数的使用方法
    onClick={this.handleAdd} ---  handleAdd=()=>{箭头函数的this是组件的实例}
@@ -9,6 +11,7 @@
 
  */
 import React from 'react'
+import Child from './Child'
 
 export default class ReactLife extends React.Component{
     constructor(props){
@@ -17,6 +20,7 @@ export default class ReactLife extends React.Component{
             count:0
         };
     }
+    //state={count:0};//用这个来代替constructor构造函数也是可以的
 
     handleAdd=()=>{
         this.setState({
@@ -37,6 +41,8 @@ export default class ReactLife extends React.Component{
                 <button onClick={this.handleAdd}>点击一下</button>
                 <button onClick={this.handleClick.bind(this)}>点击一下</button>
                 <p>{this.state.count}</p>
+                
+                <Child name={this.state.count} />
             </div>
         )
     }
