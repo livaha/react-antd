@@ -247,6 +247,56 @@ export default class ReactLife extends React.Component{
 
 
 
+
+
+
+
+## 项目主页工程搭建
+
+##### 1. 基础插件安装，Less文件加载配置
+
+antd 这个UI组件用的是less，编译完后才会生成固定的css文件用来发布，所以我们需要用webpack来加载less
+
+~~~
+安装React-Router,Axios
+安装AntD
+暴露webpack配置文件
+安装less-loader
+修改less-loader
+~~~
+
+安装包：
+
+~~~
+yarn add react-router-dom axios less-loader
+~~~
+
+暴露webpack插件：
+
+~~~
+yarn eject
+~~~
+
+
+
+
+
+
+
+##### 2. 项目主页结构开发
+
+菜单组件开发
+
+头部组件开发
+
+底部组件开发
+
+
+
+
+
+## UI组件使用
+
 #### onClick事件
 
 ~~~

@@ -4,6 +4,7 @@ import './index.css';
 import ReactLife from './page/demo/ReactLife';
 import Home from './page/route_demo/route1/Home'
 import Router from './page/route_demo/route4/router'
+import Buttons from './page/ui/buttons'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Router />, document.getElementById('root'));
