@@ -1,3 +1,5 @@
+# react-router-dom
+
 
 
 #### 目录结构 
@@ -12,6 +14,7 @@
 |   |    |    --- route2         --- 路由与DOM分开，功能与route1一样（可对比route1)
 |   |    |    --- route3                     ---嵌套路由
 |   |    |    --- route4                     ---动态路由/路由参数
+|   +-- index.js                         ---渲染入口
 ~~~
 
 index.js引入demo的入口文件即可yarn start

@@ -247,9 +247,46 @@ export default class ReactLife extends React.Component{
 
 
 
+#### onClick事件
+
+~~~
+不当：<button onClick={this.handleOpen('params')}></button>  这样子会直接调用这个函数的
+正确：<button onClick={('params')=>this.handleOpen}></button>  匿名函数传参不会主动调用
+~~~
 
 
 
+####  [type]:true
+
+[type]：会把type当成变量
+
+~~~
+<button onClick={('param1')=>this.handleOpen}></button>  
+<button onClick={('param2')=>this.handleOpen}></button>  
+<button onClick={('param3')=>this.handleOpen}></button>  
+<button onClick={('param4')=>this.handleOpen}></button>  
+
+state={
+    param1:false,
+    param2:false,
+    param3:false,
+    param4:false,
+}
+
+handleOpen = (type)=>{
+    this.setState({
+        [type]:true
+    })
+    
+    /*下面这种用if判断的方法很笨
+    if(type=='1'){
+        this.setState({
+            param1:true
+        })
+    }....
+    */
+}
+~~~
 
 
 
