@@ -111,7 +111,12 @@ yarn add react-router
 
 ```js
 +-- build/                                  ---打包的文件目录
-+-- config/                                 ---npm run eject 后的配置文件目录
++-- config/                                 ---npm run eject 后的配置文件
+|   --- webpack.config.js                   ---开发、上线的配置
+|   --- webpackDevServer.config.js          ---本地服务的配置文件 ，如端口，IP（我们不需要管）
++-- script/                                 ---暴露出来的脚本，可以在package.json里面的scripts里面看到（不需要修改）
++-- ...
+目录
 +-- node_modules/                           ---npm下载文件目录
 +-- public/                                 
 |   --- index.html							---首页入口html文件
@@ -275,6 +280,16 @@ yarn add react-router-dom axios less-loader
 
 ~~~
 yarn eject
+~~~
+
+暴露出来的目录结构 ：
+
+~~~
++-- config/                           ---npm run eject 后的配置文件
+|   --- webpack.config.js             ---开发、上线的配置
+|   --- webpackDevServer.config.js    ---本地服务的配置文件 ，如端口，IP（我们不需要管）
+|   --- ...
++-- script/                           ---暴露出来的脚本，可以在package.json里面的scripts里面看到（不需要修改）
 ~~~
 
 
