@@ -115,14 +115,15 @@ yarn add react-router
 +-- node_modules/                           ---npm下载文件目录
 +-- public/                                 
 |   --- index.html							---首页入口html文件
-|   --- npm.json							---echarts测试数据
-|   --- weibo.json							---echarts测试数据
 +-- src/                                    ---核心代码目录
-|   +-- components                          ---各式各样的组件存放目录
-|   |    +-- animation                      ---动画组件
+|   +-- pages                          ---测试demo
+|   |    +-- demo                      ---生命周期测试demo
 |   |    |    --- ...   
-|   |    +-- charts                         ---图表组件
-|   |    |    --- ...   
+|   |    +-- route_demo                      ---react-router-dom测试demo
+|   |    |    --- route1                     --- 一般路由写法
+|   |    |    --- route2         --- 路由与DOM分开，功能与route1一样（可对比route1)
+|   |    |    --- route3                     ---嵌套路由
+|   |    |    --- route4                     ---动态路由
 |   |    +-- dashboard                      ---首页组件
 |   |    |    --- ...   
 |   |    +-- forms                          ---表单组件
