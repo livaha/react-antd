@@ -388,7 +388,32 @@ axios不能跨域，只会是用get,post
 因为会有多个路由，根路由也会有同级路由，如/login, / , /main/，所以 需要有一个组件来囊括这些路由，这里的<App/>组件就有这个作用
 ```
 
+~~~
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        {this.props.children}
+      </div>
+    );
+  }
+}
+
+export default App;
+
+~~~
+
+
+
+
+
 ## UI组件使用
+
+
 
 ## 重要知识点
 
