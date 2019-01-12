@@ -461,7 +461,7 @@ Promise知识点调试
 
 resolve是成功之后返回回去，reject是失败之后返回回去
 
-~~~
+~~~javascript
 
 ~~~
 
@@ -478,3 +478,28 @@ ctrl+p ,写入目录axios/index.js
 
 
 jsonp , 跨域会有个callback， 
+
+
+
+#### CSS3画三角形
+
+~~~less
+
+~~~
+
+  ![1547289720755](assets/1547289720755.png)
+
+
+
+#### 添加日期
+
+~~~javascript
+
+~~~
+
+
+
+
+
+
+
