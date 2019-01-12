@@ -39,7 +39,8 @@ const cssRegex = /\.css$/;
 const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
-
+const lessRegex = /\.less$/;
+const lessModuleRegex = /\.module\.less$/;
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
 module.exports = function(webpackEnv) {
@@ -102,14 +103,31 @@ module.exports = function(webpackEnv) {
         },
       },
     ].filter(Boolean);
-    if (preProcessor) {
+    /*if (preProcessor) {
       loaders.push({
         loader: require.resolve(preProcessor),
         options: {
           sourceMap: isEnvProduction && shouldUseSourceMap,
         },
       });
+    }*/
+    //自定义配置
+    if (preProcessor) {
+      let loader = {
+        loader: require.resolve(preProcessor),
+        options: {
+          sourceMap: shouldUseSourceMap,
+        },
+      }
+      if (preProcessor === "less-loader") {
+        loader.options.modifyVars = {
+          'primary-color': '#121394',
+        }
+        loader.options.javascriptEnabled = true
+      }
+      loaders.push(loader);
     }
+
     return loaders;
   };
 
@@ -381,7 +399,7 @@ module.exports = function(webpackEnv) {
                 // being evaluated would be much more helpful.
                 sourceMaps: false,
               },
-            },
+            },          
             // "postcss" loader applies autoprefixer to our CSS.
             // "css" loader resolves paths in CSS and adds assets as dependencies.
             // "style" loader turns CSS into JS modules that inject <style> tags.
@@ -445,7 +463,26 @@ module.exports = function(webpackEnv) {
                 },
                 'sass-loader'
               ),
+            },            
+            // Opt-in support for less    
+            {
+              test: lessRegex,
+              exclude: lessModuleRegex,
+              use: getStyleLoaders({ importLoaders: 2 }, 'less-loader'),
             },
+            // Adds support for CSS Modules, but using SASS
+            // using the extension .module.scss or .module.sass
+            {
+              test: lessModuleRegex,
+              use: getStyleLoaders(
+                {
+                  importLoaders: 2,
+                  modules: true,
+                  getLocalIdent: getCSSModuleLocalIdent,
+                },
+                'less-loader'
+              ),
+            },             
             // "file" loader makes sure those assets get served by WebpackDevServer.
             // When you `import` an asset, you get its (virtual) filename.
             // In production, they would get copied to the `build` folder.

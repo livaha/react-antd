@@ -258,7 +258,7 @@ export default class ReactLife extends React.Component{
 
 ## 项目主页工程搭建
 
-##### 1. 基础插件安装，Less文件加载配置
+#### 1. 基础插件安装，Less文件加载配置
 
 antd 这个UI组件用的是less，编译完后才会生成固定的css文件用来发布，所以我们需要用webpack来加载less
 
@@ -270,19 +270,19 @@ antd 这个UI组件用的是less，编译完后才会生成固定的css文件用来发布，所以我们需要用
 修改less-loader
 ~~~
 
-安装包：
+##### 1.1安装包：
 
 ~~~
 yarn add react-router-dom axios less-loader
 ~~~
 
-暴露webpack插件：
+##### 1.2 暴露webpack插件：
 
 ~~~
 yarn eject
 ~~~
 
-暴露出来的目录结构 ：
+##### 1.3 暴露出来的目录结构 ：
 
 ~~~
 +-- config/                           ---npm run eject 后的配置文件
@@ -292,19 +292,45 @@ yarn eject
 +-- script/                           ---暴露出来的脚本，可以在package.json里面的scripts里面看到（不需要修改）
 ~~~
 
+##### 1.4 新版webpack中增添对less的支持
+
+~~~
+
+~~~
+
+~~~
+
+~~~
+
+具体实现请参考教程：
+
+~~~
+
+~~~
 
 
 
+webpack是从下往上一个一个来执行的，
+
+通过'less-loader'，再通过'postcss-loader'，最后是'css-loader'来将less转换为css
+
+~~~
+实现按需加载：babel-plugin-import
+配置文件不动，在暴露的文件中的js中加个插件
+
+一个小知道
+yarn add less@^2.7.3    '^'表示只要是>2,<3的大版本都可以升级
+~~~
 
 
 
-##### 2. 项目主页结构开发
+#### 2. 项目主页结构开发
 
-菜单组件开发
+#### 3. 菜单组件开发
 
-头部组件开发
+#### 4. 头部组件开发
 
-底部组件开发
+#### 5. 底部组件开发
 
 
 
