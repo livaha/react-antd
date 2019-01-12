@@ -112,7 +112,7 @@ index.js引入demo的入口文件即可yarn start
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Router from './page/route_demo/route4/router'
+import Router from './pages/route_demo/route4/router'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Router />, document.getElementById('root'));

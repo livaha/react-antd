@@ -1,172 +1,156 @@
-# ReactÈ«¼ÒÍ°+AntDµ¥³µºóÌ¨¹ÜÀíÏµÍ³¿ª·¢
+# Reactå…¨å®¶æ¡¶+AntDå•è½¦åå°ç®¡ç†ç³»ç»Ÿå¼€å‘
 
-#### React È«¼ÒÍ°
+#### React å…¨å®¶æ¡¶
 
-+ React»ù´¡ÖªÊ¶¡¢ÉúÃüÖÜÆÚ
-+ Router4.0Óï·¨½²½â
-+ Redux¼¯³É¿ª·¢
+- ReactåŸºç¡€çŸ¥è¯†ã€ç”Ÿå‘½å‘¨æœŸ
+- Router4.0è¯­æ³•è®²è§£
+- Reduxé›†æˆå¼€å‘
 
-#### AntD UI×é¼ş
+#### AntD UIç»„ä»¶
 
-+ ×îÊµÓÃµÄ»ù´¡×é¼ş 
-+ AntDÕ¤¸ñÏµÍ³
-+ ETable×é¼ş·â×°
-+ BaseForm×é¼ş·â×°   ----
-+ ±í¸ñÄÚÇ¶µ¥Ñ¡¡¢¸´Ñ¡·â×°
+- æœ€å®ç”¨çš„åŸºç¡€ç»„ä»¶
+- AntDæ …æ ¼ç³»ç»Ÿ
+- ETableç»„ä»¶å°è£…
+- BaseFormç»„ä»¶å°è£… ----
+- è¡¨æ ¼å†…åµŒå•é€‰ã€å¤é€‰å°è£…
 
-#### ¹«¹²»úÖÆ·â±Õ
+#### å…¬å…±æœºåˆ¶å°é—­
 
-+ AxiosÇëÇó²å¼ş·â±Õ
-+ API·â×°
-+ ´íÎóÀ¹½Ø
-+ È¨ÏŞ¡¢²Ëµ¥·â×°
-+ ÈÕÆÚ¡¢½ğ¶î¡¢ÊÖ»úºÅ·â×°
-+ Loading¡¢·ÖÒ³¡¢Mock...
+- Axiosè¯·æ±‚æ’ä»¶å°é—­
+- APIå°è£…
+- é”™è¯¯æ‹¦æˆª
+- æƒé™ã€èœå•å°è£…
+- æ—¥æœŸã€é‡‘é¢ã€æ‰‹æœºå·å°è£…
+- Loadingã€åˆ†é¡µã€Mock...
 
+#### é¡¹ç›®æ•´ä½“æ¶æ„
 
+[![1547120255663](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547120255663.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547120255663.png)
 
-#### ÏîÄ¿ÕûÌå¼Ü¹¹
+#### ç”Ÿæ€ä»‹ç»
 
-![1547120255663](assets/1547120255663.png)
+- Vueç”Ÿæ€ï¼šVue + Vue-Router + Vuex + Axios + Babel + Webpack ...
+- Reactç”Ÿæ€ï¼šReact + React-Router + Redux + Axios + Babel + Webpack ...
 
+Redux : æ²¡æœ‰å…³ç³»é—´çš„ç»„ä»¶é—´é€šä¿¡
 
+ç¼–ç¨‹å¼å®ç°ï¼šéœ€è¦ä»¥å…·ä½“ä»£ç è¡¨è¾¾åœ¨å“ªé‡Œï¼Œåšä»€ä¹ˆï¼Œå¦‚ä½•å®ç°
 
-#### ÉúÌ¬½éÉÜ
+å£°æ˜å¼å®ç°ï¼š åªéœ€è¦å£°æ˜åœ¨å“ªé‡Œï¼Œåšä»€ä¹ˆï¼Œæ— éœ€å…³å¿ƒå¦‚ä½•å®ç°
 
-- VueÉúÌ¬£ºVue + Vue-Router + Vuex + Axios + Babel + Webpack ...
-- ReactÉúÌ¬£ºReact + React-Router + Redux + Axios + Babel + Webpack ...
+## Reactè„šæ‰‹æ¶ã€Yarnä»‹ç»
 
-Redux : Ã»ÓĞ¹ØÏµ¼äµÄ×é¼ş¼äÍ¨ĞÅ
+- #### å¦‚ä½•å®‰è£…å’Œä½¿ç”¨Reactè„šæ‰‹æ¶
 
-±à³ÌÊ½ÊµÏÖ£ºĞèÒªÒÔ¾ßÌå´úÂë±í´ïÔÚÄÄÀï£¬×öÊ²Ã´£¬ÈçºÎÊµÏÖ
-
-ÉùÃ÷Ê½ÊµÏÖ£º Ö»ĞèÒªÉùÃ÷ÔÚÄÄÀï£¬×öÊ²Ã´£¬ÎŞĞè¹ØĞÄÈçºÎÊµÏÖ
-
-
-
-## React½ÅÊÖ¼Ü¡¢Yarn½éÉÜ
-
-+ #### ÈçºÎ°²×°ºÍÊ¹ÓÃReact½ÅÊÖ¼Ü
-
-~~~
-npm ¹ÙÍø£º https://facebook.github.io/create-react-app/docs/getting-started
-¹ÙÍø £º https://reactjs.org/docs/create-a-new-react-app.html
+```
+npm å®˜ç½‘ï¼š https://facebook.github.io/create-react-app/docs/getting-started
+å®˜ç½‘ ï¼š https://reactjs.org/docs/create-a-new-react-app.html
 
 npm i -g create-react-app my-app
 create-react-app my-app
 cd my-app
 npm start
 
-¹ÙÍøĞÂÊ¹ÓÃ£º
+å®˜ç½‘æ–°ä½¿ç”¨ï¼š
 npx create-react-app my-app
 cd my-app
 npm start
-~~~
+```
 
-+ #### Yarn
+- #### Yarn
 
-~~~ 
-Ê¹ÓÃ·½·¨£º https://yarn.bootcss.com/docs/usage/
-~~~
+```
+ä½¿ç”¨æ–¹æ³•ï¼š https://yarn.bootcss.com/docs/usage/
+```
 
-#####  Ê²Ã´ÊÇYarn
+##### ä»€ä¹ˆæ˜¯Yarn
 
-+ YarnÊÇĞÂµÄÒ»´ú°ü¹ÜÀí¹¤¾ß
+- Yarnæ˜¯æ–°çš„ä¸€ä»£åŒ…ç®¡ç†å·¥å…·
 
-##### ÎªÊ²Ã´Ê¹ÓÃYarn
+##### ä¸ºä»€ä¹ˆä½¿ç”¨Yarn
 
-+ ËÙ¶È¿ì
-+ °²×°°æ±¾Í³Ò»£¬¸ü°²È«     *Yarn¿ÉÒÔ°Ñ°æ±¾Ëø¶¨£¬Ê¹ÏîÄ¿µÄ°æ±¾Í³Ò»*
-+ ¸ü¼ò½àµÄÊä³ö
-+ ¸üºÃµÄÓïÒå»¯
+- é€Ÿåº¦å¿«
+- å®‰è£…ç‰ˆæœ¬ç»Ÿä¸€ï¼Œæ›´å®‰å…¨ *Yarnå¯ä»¥æŠŠç‰ˆæœ¬é”å®šï¼Œä½¿é¡¹ç›®çš„ç‰ˆæœ¬ç»Ÿä¸€*
+- æ›´ç®€æ´çš„è¾“å‡º
+- æ›´å¥½çš„è¯­ä¹‰åŒ–
 
-##### ÈçºÎÊ¹ÓÃYarn
+##### å¦‚ä½•ä½¿ç”¨Yarn
 
-+ yarn init   ³õÊ¼»¯ÏîÄ¿
-+ yarn add   °²×°Ò»¸ö°ü
-+ yarn remove   É¾³ıÒ»¸ö°ü
-+ yarn  / yarn install   °²×°ÏîÄ¿ÒÀÀµ
+- yarn init åˆå§‹åŒ–é¡¹ç›®
+- yarn add å®‰è£…ä¸€ä¸ªåŒ…
+- yarn remove åˆ é™¤ä¸€ä¸ªåŒ…
+- yarn / yarn install å®‰è£…é¡¹ç›®ä¾èµ–
 
+##### reactè„šæ‰‹æ¶ä¸webpack
 
+reactè„šæ‰‹æ¶å·²ç»æŠŠwebpackå°è£…èµ·æ¥äº†ï¼Œæˆ‘ä»¬åªéœ€è¦å…³æ³¨codeå®ç°å°±è¡Œäº†
 
-##### react½ÅÊÖ¼ÜÓëwebpack
+å¦‚æœéœ€è¦æ”¹webpackï¼Œå°±éœ€è¦é€šè¿‡`eject`æ¥æš´éœ²å‡ºwebpack
 
-react½ÅÊÖ¼ÜÒÑ¾­°Ñwebpack·â×°ÆğÀ´ÁË£¬ÎÒÃÇÖ»ĞèÒª¹Ø×¢codeÊµÏÖ¾ÍĞĞÁË
+## é¡¹ç›®å®‰è£…çš„ä¾èµ–ï¼š
 
-Èç¹ûĞèÒª¸Äwebpack£¬¾ÍĞèÒªÍ¨¹ı```eject```À´±©Â¶³öwebpack
-
-
-
-## ÏîÄ¿°²×°µÄÒÀÀµ£º
-
-~~~
+```
 yarn add react-router
-~~~
+```
 
+## ç›®å½•ç»“æ„
 
-
-
-
-## Ä¿Â¼½á¹¹
-
-```js
-+-- build/                                  ---´ò°üµÄÎÄ¼şÄ¿Â¼
-+-- config/                                 ---npm run eject ºóµÄÅäÖÃÎÄ¼ş
-|   --- webpack.config.js                   ---¿ª·¢¡¢ÉÏÏßµÄÅäÖÃ
-|   --- webpackDevServer.config.js          ---±¾µØ·şÎñµÄÅäÖÃÎÄ¼ş £¬Èç¶Ë¿Ú£¬IP£¨ÎÒÃÇ²»ĞèÒª¹Ü£©
-+-- script/                                 ---±©Â¶³öÀ´µÄ½Å±¾£¬¿ÉÒÔÔÚpackage.jsonÀïÃæµÄscriptsÀïÃæ¿´µ½£¨²»ĞèÒªĞŞ¸Ä£©
+```
++-- build/                                  ---æ‰“åŒ…çš„æ–‡ä»¶ç›®å½•
++-- config/                                 ---npm run eject åçš„é…ç½®æ–‡ä»¶
+|   --- webpack.config.js                   ---å¼€å‘ã€ä¸Šçº¿çš„é…ç½®
+|   --- webpackDevServer.config.js          ---æœ¬åœ°æœåŠ¡çš„é…ç½®æ–‡ä»¶ ï¼Œå¦‚ç«¯å£ï¼ŒIPï¼ˆæˆ‘ä»¬ä¸éœ€è¦ç®¡ï¼‰
++-- script/                                 ---æš´éœ²å‡ºæ¥çš„è„šæœ¬ï¼Œå¯ä»¥åœ¨package.jsoné‡Œé¢çš„scriptsé‡Œé¢çœ‹åˆ°ï¼ˆä¸éœ€è¦ä¿®æ”¹ï¼‰
 +-- ...
-Ä¿Â¼
-+-- node_modules/                           ---npmÏÂÔØÎÄ¼şÄ¿Â¼
+ç›®å½•
++-- node_modules/                           ---npmä¸‹è½½æ–‡ä»¶ç›®å½•
 +-- public/                                 
-|   --- index.html							---Ê×Ò³Èë¿ÚhtmlÎÄ¼ş
-+-- src/                                    ---ºËĞÄ´úÂëÄ¿Â¼
-|   +-- admin.js                          ---Ö÷½á¹¹ºÍ´úÂë
-|   +-- config                          ---²Ëµ¥ÅäÖÃ£¬¼°ÆäËû±äÁ¿ÅäÖÃ
-|   +-- components                         ---×é¼ş
+|   --- index.html							---é¦–é¡µå…¥å£htmlæ–‡ä»¶
++-- src/                                    ---æ ¸å¿ƒä»£ç ç›®å½•
+|   +-- admin.js                          ---ä¸»ç»“æ„å’Œä»£ç 
+|   +-- config                          ---èœå•é…ç½®ï¼ŒåŠå…¶ä»–å˜é‡é…ç½®
+|   +-- components                         ---ç»„ä»¶
 |   |    +--                       ---
-|   +-- pages                          ---²âÊÔdemo
-|   |    +-- demo                      ---ÉúÃüÖÜÆÚ²âÊÔdemo
+|   +-- pages                          ---æµ‹è¯•demo
+|   |    +-- demo                      ---ç”Ÿå‘½å‘¨æœŸæµ‹è¯•demo
 |   |    |    --- ...   
-|   |    +-- route_demo                      ---react-router-dom²âÊÔdemo
-|   |    |    --- route1                     --- Ò»°ãÂ·ÓÉĞ´·¨
-|   |    |    --- route2         --- Â·ÓÉÓëDOM·Ö¿ª£¬¹¦ÄÜÓëroute1Ò»Ñù£¨¿É¶Ô±Èroute1)
-|   |    |    --- route3                     ---Ç¶Ì×Â·ÓÉ
-|   |    |    --- route4                     ---¶¯Ì¬Â·ÓÉ
-|   |    +-- dashboard                      ---Ê×Ò³×é¼ş
+|   |    +-- route_demo                      ---react-router-domæµ‹è¯•demo
+|   |    |    --- route1                     --- ä¸€èˆ¬è·¯ç”±å†™æ³•
+|   |    |    --- route2         --- è·¯ç”±ä¸DOMåˆ†å¼€ï¼ŒåŠŸèƒ½ä¸route1ä¸€æ ·ï¼ˆå¯å¯¹æ¯”route1)
+|   |    |    --- route3                     ---åµŒå¥—è·¯ç”±
+|   |    |    --- route4                     ---åŠ¨æ€è·¯ç”±
+|   |    +-- dashboard                      ---é¦–é¡µç»„ä»¶
 |   |    |    --- ...   
-|   |    +-- forms                          ---±íµ¥×é¼ş
+|   |    +-- forms                          ---è¡¨å•ç»„ä»¶
 |   |    |    --- ...   
-|   |    +--                           ---Ò³Ãæ×é¼ş
+|   |    +--                           ---é¡µé¢ç»„ä»¶
 |   |    |    --- ...   
-|   |    +-- tables                         ---±í¸ñ×é¼ş
+|   |    +-- tables                         ---è¡¨æ ¼ç»„ä»¶
 |   |    |    --- ...   
-|   |    +-- ui                             ---ui×é¼ş
+|   |    +-- ui                             ---uiç»„ä»¶
 |   |    |    --- ...   
-|   |    --- BreadcrumbCustom.jsx           ---Ãæ°üĞ¼×é¼ş
-|   |    --- HeaderCustom.jsx               ---¶¥²¿µ¼º½×é¼ş
-|   |    --- Page.jsx                       ---Ò³ÃæÈİÆ÷
-|   |    --- SiderCustom.jsx                ---×ó±ß²Ëµ¥×é¼ş
-|   +-- style                               ---ÏîÄ¿µÄÑùÊ½´æ·ÅÄ¿Â¼£¬Ö÷Òª²ÉÓÃless±àĞ´
-|   +-- utils                               ---¹¤¾ßÎÄ¼ş´æ·ÅÄ¿Â¼
-|   --- App.js                              ---×é¼şÈë¿ÚÎÄ¼ş
-|   --- index.js                            ---ÏîÄ¿µÄÕûÌåjsÈë¿ÚÎÄ¼ş£¬°üÀ¨Â·ÓÉÅäÖÃµÈ
---- .env                                    ---Æô¶¯ÏîÄ¿×Ô¶¨Òå¶Ë¿ÚÅäÖÃÎÄ¼ş
---- .eslintrc                               ---×Ô¶¨ÒåeslintÅäÖÃÎÄ¼ş£¬°üÀ¨Ôö¼ÓµÄreact jsxÓï·¨ÏŞÖÆ
+|   |    --- BreadcrumbCustom.jsx           ---é¢åŒ…å±‘ç»„ä»¶
+|   |    --- HeaderCustom.jsx               ---é¡¶éƒ¨å¯¼èˆªç»„ä»¶
+|   |    --- Page.jsx                       ---é¡µé¢å®¹å™¨
+|   |    --- SiderCustom.jsx                ---å·¦è¾¹èœå•ç»„ä»¶
+|   +-- style                               ---é¡¹ç›®çš„æ ·å¼å­˜æ”¾ç›®å½•ï¼Œä¸»è¦é‡‡ç”¨lessç¼–å†™
+|   +-- utils                               ---å·¥å…·æ–‡ä»¶å­˜æ”¾ç›®å½•
+|   --- App.js                              ---ç»„ä»¶å…¥å£æ–‡ä»¶
+|   --- index.js                            ---é¡¹ç›®çš„æ•´ä½“jså…¥å£æ–‡ä»¶ï¼ŒåŒ…æ‹¬è·¯ç”±é…ç½®ç­‰
+--- .env                                    ---å¯åŠ¨é¡¹ç›®è‡ªå®šä¹‰ç«¯å£é…ç½®æ–‡ä»¶
+--- .eslintrc                               ---è‡ªå®šä¹‰eslinté…ç½®æ–‡ä»¶ï¼ŒåŒ…æ‹¬å¢åŠ çš„react jsxè¯­æ³•é™åˆ¶
 --- package.json                                    
 ```
 
+## Reactç”Ÿå‘½å‘¨æœŸä»‹ç»
 
+åŸºç¡€ä»‹ç»è¯·çœ‹æœ¬ç›®å½•çš„æ–‡ä»¶ã€ŠReactç”Ÿå‘½å‘¨æœŸ.mdã€‹
 
-## ReactÉúÃüÖÜÆÚ½éÉÜ
-
-»ù´¡½éÉÜÇë¿´±¾Ä¿Â¼µÄÎÄ¼ş¡¶ReactÉúÃüÖÜÆÚ.md¡·
-
-ÔÚÏîÄ¿ÖĞµÄ´úÂëÊ¾Àı£º
+åœ¨é¡¹ç›®ä¸­çš„ä»£ç ç¤ºä¾‹ï¼š
 
 src/index.js
 
-~~~
+```
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -179,21 +163,20 @@ ReactDOM.render(<ReactLife />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
-~~~
+```
 
 src/page/demo/ReactLife.js
 
-~~~
-/*ÉúÃüÖÜÆÚº¯Êı²âÊÔ
-ÊµÏÖ£ºÍ¨¹ıµã»÷°´Å¥¸Ä±ästateÖµ
-ReactLife¸øChild´«²ÎÊı
+```javascript
+/*ç”Ÿå‘½å‘¨æœŸå‡½æ•°æµ‹è¯•
+å®ç°ï¼šé€šè¿‡ç‚¹å‡»æŒ‰é’®æ”¹å˜stateå€¼
+ReactLifeç»™Childä¼ å‚æ•°
 
-ÖªÊ¶µã£º
-1.¿´ËüÁ©µÄthis¼°¼ıÍ·º¯ÊıµÄÊ¹ÓÃ·½·¨
-   onClick={this.handleAdd} ---  handleAdd=()=>{¼ıÍ·º¯ÊıµÄthisÊÇ×é¼şµÄÊµÀı}
-   onClick={this.handleClick.bind(this)} ---  handleClick(){Õâ¸ö·Ç¼ıÍ·º¯ÊıµÄthis²»ÊÇ×é¼şµÄÊµÀı£¬
-    ËùÒÔÔÚµ÷ÓÃµÄÊ±ºòÒªÓÃµ½.bind(this)}
+çŸ¥è¯†ç‚¹ï¼š
+1.çœ‹å®ƒä¿©çš„thisåŠç®­å¤´å‡½æ•°çš„ä½¿ç”¨æ–¹æ³•
+   onClick={this.handleAdd} ---  handleAdd=()=>{ç®­å¤´å‡½æ•°çš„thisæ˜¯ç»„ä»¶çš„å®ä¾‹}
+   onClick={this.handleClick.bind(this)} ---  handleClick(){è¿™ä¸ªéç®­å¤´å‡½æ•°çš„thisä¸æ˜¯ç»„ä»¶çš„å®ä¾‹ï¼Œ
+    æ‰€ä»¥åœ¨è°ƒç”¨çš„æ—¶å€™è¦ç”¨åˆ°.bind(this)}
    
 
  */
@@ -207,7 +190,7 @@ export default class ReactLife extends React.Component{
             count:0
         };
     }
-    //state={count:0};//ÓÃÕâ¸öÀ´´úÌæconstructor¹¹Ôìº¯ÊıÒ²ÊÇ¿ÉÒÔµÄ
+    //state={count:0};//ç”¨è¿™ä¸ªæ¥ä»£æ›¿constructoræ„é€ å‡½æ•°ä¹Ÿæ˜¯å¯ä»¥çš„
 
     handleAdd=()=>{
         this.setState({
@@ -224,9 +207,9 @@ export default class ReactLife extends React.Component{
         let style = {padding:20}
         return (
             <div style={style}>
-                <p>ReactÉúÃüÖÜÆÚ½éÉÜ</p>
-                <button onClick={this.handleAdd}>µã»÷Ò»ÏÂ</button>
-                <button onClick={this.handleClick.bind(this)}>µã»÷Ò»ÏÂ</button>
+                <p>Reactç”Ÿå‘½å‘¨æœŸä»‹ç»</p>
+                <button onClick={this.handleAdd}>ç‚¹å‡»ä¸€ä¸‹</button>
+                <button onClick={this.handleClick.bind(this)}>ç‚¹å‡»ä¸€ä¸‹</button>
                 <p>{this.state.count}</p>
                 
                 <Child name={this.state.count} />
@@ -234,184 +217,193 @@ export default class ReactLife extends React.Component{
         )
     }
 }
-~~~
+```
 
+/src/pages/demo/Child.js
 
+```javascript
+/*ReactLifeç»„ä»¶ç»™Childç»„ä»¶ä¼ å‚æ•°
+ç”Ÿå‘½å‘¨æœŸï¼š
+å¼€å§‹æ—¶ä¼šè°ƒç”¨ componentWillMountï¼ŒcomponentDidMount
+åªè¦è°ƒç”¨äº†setStateæ”¹å˜stateåï¼Œå°±ä¼šç»™ç»„ä»¶ä¼ å€¼ ï¼Œè°ƒç”¨componentWillReceiveProps
+éšåä¼šæ¥ç€è°ƒç”¨ä¸‰ä¸ªupdate: shouldComponentUpdate , componentWillUpdate ,componentDidUpdate
+*/
+import React from 'react'
 
-/src/page/demo/Child.js
+export default class Child extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            count:0
+        };
+    }
+    componentWillMount(){
+        console.log('will mount');
+    }
+    componentDidMount(){        
+        console.log('did mount');
+    }
+    componentWillReceiveProps(newProps){
+        //æ¥æ”¶ä»å…¶ä»–ç»„ä»¶ä¼ è¿‡æ¥çš„å‚æ•°
+        console.log('will props ï¼š '+ newProps.name);
+    }
+    shouldComponentUpdate(){
+        //å®ƒæ˜¯ä¸€æ—¦è°ƒç”¨setStateå°±ä¼šæ›´æ–°çš„ä¸€ä¸ªAPIæ–¹æ³•
+        //é»˜è®¤return true,  å¦‚æœreturn false,ä¸‹é¢çš„å°±ä¸èµ°äº†
+        console.log('should update')
+        return true;
+    }
+    componentWillUpdate(){
+        console.log('will update')        
+    }
+    componentDidUpdate(){
+        console.log('did update')        
+    }
 
-~~~
+    render(){
+        return (
+            <div>
+                <p>è¿™é‡Œæ˜¯å­ç»„ä»¶ï¼Œæµ‹è¯•å­ç»„ä»¶çš„ç”Ÿå‘½å‘¨æœŸ</p>
+                <p>{this.props.name}</p>
+            </div>
+        )
+    }
+}
+```
 
-~~~
+é¡µé¢æ˜¾ç¤ºï¼š[![1547129343237](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547129343237.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547129343237.png)
 
+ç‚¹å‡»æŒ‰é’®åçš„æ‰“å°ä¿¡æ¯ï¼š
 
+å¼€å§‹æ‰“å°å‰é¢ä¸¤ä¸ªmount, ç‚¹å‡»æŒ‰é”®åï¼ˆè°ƒç”¨äº†setState,æ”¹å˜äº†stateå€¼ï¼‰è°ƒç”¨äº†å4ä¸ª
 
-Ò³ÃæÏÔÊ¾£º![1547129343237](assets/1547129343237.png)
+[![1547129182737](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547129182737.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547129182737.png)
 
-µã»÷°´Å¥ºóµÄ´òÓ¡ĞÅÏ¢£º
+## é¡¹ç›®ä¸»é¡µå·¥ç¨‹æ­å»º
 
-¿ªÊ¼´òÓ¡Ç°ÃæÁ½¸ömount, µã»÷°´¼üºó£¨µ÷ÓÃÁËsetState,¸Ä±äÁËstateÖµ£©µ÷ÓÃÁËºó4¸ö
+#### 1. åŸºç¡€æ’ä»¶å®‰è£…ï¼ŒLessæ–‡ä»¶åŠ è½½é…ç½®
 
-![1547129182737](assets/1547129182737.png)
+antd è¿™ä¸ªUIç»„ä»¶ç”¨çš„æ˜¯lessï¼Œç¼–è¯‘å®Œåæ‰ä¼šç”Ÿæˆå›ºå®šçš„cssæ–‡ä»¶ç”¨æ¥å‘å¸ƒï¼Œæ‰€ä»¥æˆ‘ä»¬éœ€è¦ç”¨webpackæ¥åŠ è½½less
 
+```
+å®‰è£…React-Router,Axios
+å®‰è£…AntD
+æš´éœ²webpacké…ç½®æ–‡ä»¶
+å®‰è£…less-loader
+ä¿®æ”¹less-loader
+```
 
+##### 1.1å®‰è£…åŒ…ï¼š
 
-
-
-
-
-## ÏîÄ¿Ö÷Ò³¹¤³Ì´î½¨
-
-#### 1. »ù´¡²å¼ş°²×°£¬LessÎÄ¼ş¼ÓÔØÅäÖÃ
-
-antd Õâ¸öUI×é¼şÓÃµÄÊÇless£¬±àÒëÍêºó²Å»áÉú³É¹Ì¶¨µÄcssÎÄ¼şÓÃÀ´·¢²¼£¬ËùÒÔÎÒÃÇĞèÒªÓÃwebpackÀ´¼ÓÔØless
-
-~~~
-°²×°React-Router,Axios
-°²×°AntD
-±©Â¶webpackÅäÖÃÎÄ¼ş
-°²×°less-loader
-ĞŞ¸Äless-loader
-~~~
-
-##### 1.1°²×°°ü£º
-
-~~~
+```
 yarn add react-router-dom axios less-loader
-~~~
+```
 
-##### 1.2 ±©Â¶webpack²å¼ş£º
+##### 1.2 æš´éœ²webpackæ’ä»¶ï¼š
 
-~~~
+```
 yarn eject
-~~~
+```
 
-##### 1.3 ±©Â¶³öÀ´µÄÄ¿Â¼½á¹¹ £º
+##### 1.3 æš´éœ²å‡ºæ¥çš„ç›®å½•ç»“æ„ ï¼š
 
-~~~
-+-- config/                           ---npm run eject ºóµÄÅäÖÃÎÄ¼ş
-|   --- webpack.config.js             ---¿ª·¢¡¢ÉÏÏßµÄÅäÖÃ
-|   --- webpackDevServer.config.js    ---±¾µØ·şÎñµÄÅäÖÃÎÄ¼ş £¬Èç¶Ë¿Ú£¬IP£¨ÎÒÃÇ²»ĞèÒª¹Ü£©
+```
++-- config/                           ---npm run eject åçš„é…ç½®æ–‡ä»¶
+|   --- webpack.config.js             ---å¼€å‘ã€ä¸Šçº¿çš„é…ç½®
+|   --- webpackDevServer.config.js    ---æœ¬åœ°æœåŠ¡çš„é…ç½®æ–‡ä»¶ ï¼Œå¦‚ç«¯å£ï¼ŒIPï¼ˆæˆ‘ä»¬ä¸éœ€è¦ç®¡ï¼‰
 |   --- ...
-+-- script/                           ---±©Â¶³öÀ´µÄ½Å±¾£¬¿ÉÒÔÔÚpackage.jsonÀïÃæµÄscriptsÀïÃæ¿´µ½£¨²»ĞèÒªĞŞ¸Ä£©
-~~~
++-- script/                           ---æš´éœ²å‡ºæ¥çš„è„šæœ¬ï¼Œå¯ä»¥åœ¨package.jsoné‡Œé¢çš„scriptsé‡Œé¢çœ‹åˆ°ï¼ˆä¸éœ€è¦ä¿®æ”¹ï¼‰
+```
 
-##### 1.4 ĞÂ°æwebpackÖĞÔöÌí¶ÔlessµÄÖ§³Ö
+##### 1.4 æ–°ç‰ˆwebpackä¸­å¢æ·»å¯¹lessçš„æ”¯æŒ
 
-~~~
+å…·ä½“å®ç°è¯·å‚è€ƒæ•™ç¨‹ï¼š
 
-~~~
+```
+https://juejin.im/post/5c3964986fb9a049b41cb040
+```
 
-~~~
 
-~~~
 
-¾ßÌåÊµÏÖÇë²Î¿¼½Ì³Ì£º
+webpackæ˜¯ä»ä¸‹å¾€ä¸Šä¸€ä¸ªä¸€ä¸ªæ¥æ‰§è¡Œçš„ï¼Œ
 
-~~~
+é€šè¿‡'less-loader'ï¼Œå†é€šè¿‡'postcss-loader'ï¼Œæœ€åæ˜¯'css-loader'æ¥å°†lessè½¬æ¢ä¸ºcss
 
-~~~
+```
+å®ç°æŒ‰éœ€åŠ è½½ï¼šbabel-plugin-import
+é…ç½®æ–‡ä»¶ä¸åŠ¨ï¼Œåœ¨æš´éœ²çš„æ–‡ä»¶ä¸­çš„jsä¸­åŠ ä¸ªæ’ä»¶
+```
 
+#### 2. é¡¹ç›®ä¸»é¡µç»“æ„å¼€å‘
 
+##### ä¸»é¡µç»“æ„å®šä¹‰
 
-webpackÊÇ´ÓÏÂÍùÉÏÒ»¸öÒ»¸öÀ´Ö´ĞĞµÄ£¬
+- é¡µé¢ç»“æ„å®šä¹‰
+- ç›®å½•ç»“æ„å®šä¹‰
+- æ …æ ¼ç³»ç»Ÿä½¿ç”¨
 
-Í¨¹ı'less-loader'£¬ÔÙÍ¨¹ı'postcss-loader'£¬×îºóÊÇ'css-loader'À´½«less×ª»»Îªcss
+------
 
-~~~
-ÊµÏÖ°´Ğè¼ÓÔØ£ºbabel-plugin-import
-ÅäÖÃÎÄ¼ş²»¶¯£¬ÔÚ±©Â¶µÄÎÄ¼şÖĞµÄjsÖĞ¼Ó¸ö²å¼ş
+- åˆ©ç”¨æ …æ ¼ç³»ç»Ÿæ¥å¸ƒå±€åˆ†å±‚
 
-~~~
+ æˆ‘ä»¬ç”¨çš„æ˜¯Antdçš„æ …æ ¼ï¼š<https://ant.design/components/grid-cn/>
 
+- èœå•é…ç½®ï¼šä¸€èˆ¬æ¥è¯´èœå•æƒé™é…ç½®æ˜¯ç”±æœåŠ¡ç«¯è¿”å›çš„æ•°æ®è¿›è¡Œæƒé™åŒ¹é…çš„ï¼Œè€Œç°åœ¨æˆ‘ä»¬å…ˆæ˜¯å‰ç«¯æ§åˆ¶ --- > é€šè¿‡æœåŠ¡ç«¯æ¥å£è¿”å›æƒé™åˆ—è¡¨ï¼Œåœ¨å‰ç«¯ç”¨é€’å½’çš„æ–¹å¼å®ç°èœå•çš„æ¸²æŸ“
 
+èœå•é…ç½®æ”¾åœ¨configæ–‡ä»¶å¤¹ä¸­çš„menuConfig.js
 
-#### 2. ÏîÄ¿Ö÷Ò³½á¹¹¿ª·¢
+- ä¿®æ”¹webpack..config.jsé‡Œé¢aliasé…ç½®ï¼Œä½¿æŒ‡å®šè·¯å¾„åsrcå…¨å±€è·¯å¾„çš„åˆ«å
 
-##### Ö÷Ò³½á¹¹¶¨Òå
+```javascript
+      alias: {
+        // Support React Native Web
+        // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
+        'react-native': 'react-native-web',
+        // å…¨å±€ç›¸å¯¹è·¯å¾„åˆ«åï¼Œå¤„ç†ç›¸å¯¹è·¯å¾„è¿‡é•¿å’Œç¹çé—®é¢˜
+        '@': paths.appSrc
+      },
+```
 
-- Ò³Ãæ½á¹¹¶¨Òå
-- Ä¿Â¼½á¹¹¶¨Òå 
-- Õ¤¸ñÏµÍ³Ê¹ÓÃ
+#### 3. èœå•ç»„ä»¶å¼€å‘
 
---------------------------------------------------------------------
+#### 4. å¤´éƒ¨ç»„ä»¶å¼€å‘
 
-- ÀûÓÃÕ¤¸ñÏµÍ³À´²¼¾Ö·Ö²ã 
+jsonpè·å–è·¨åŸŸï¼šè·å–ç™¾åº¦çš„å¤©æ°”
 
-?       ÎÒÃÇÓÃµÄÊÇAntdµÄÕ¤¸ñ£ºhttps://ant.design/components/grid-cn/
+axiosä¸èƒ½è·¨åŸŸï¼Œåªä¼šæ˜¯ç”¨get,post
 
-+ ²Ëµ¥ÅäÖÃ£ºÒ»°ãÀ´Ëµ²Ëµ¥È¨ÏŞÅäÖÃÊÇÓÉ·şÎñ¶Ë·µ»ØµÄÊı¾İ½øĞĞÈ¨ÏŞÆ¥ÅäµÄ£¬¶øÏÖÔÚÎÒÃÇÏÈÊÇÇ°¶Ë¿ØÖÆ --- > Í¨¹ı·şÎñ¶Ë½Ó¿Ú·µ»ØÈ¨ÏŞÁĞ±í£¬ÔÚÇ°¶ËÓÃµİ¹éµÄ·½Ê½ÊµÏÖ²Ëµ¥µÄäÖÈ¾
+```
 
-?       ²Ëµ¥ÅäÖÃ·ÅÔÚconfigÎÄ¼ş¼ĞÖĞµÄmenuConfig.js
+```
 
+#### 5. åº•éƒ¨ç»„ä»¶å¼€å‘
 
+## è·¯ç”±
 
-+ ĞŞ¸Äwebpack..config.jsÀïÃæaliasÅäÖÃ£¬Ê¹Ö¸¶¨Â·¾¶ÃûsrcÈ«¾ÖÂ·¾¶µÄ±ğÃû 
+è·¯ç”±çš„åŸºæœ¬çŸ¥è¯† è¯·çœ‹æ–‡æ¡£ã€Šreact-router-dom.mdã€‹
 
-~~~
+è¿™é‡Œä¸»è¦å†™é¡¹ç›®ä¸­çš„è·¯ç”±
 
-~~~
+```
+å› ä¸ºä¼šæœ‰å¤šä¸ªè·¯ç”±ï¼Œæ ¹è·¯ç”±ä¹Ÿä¼šæœ‰åŒçº§è·¯ç”±ï¼Œå¦‚/login, / , /main/ï¼Œæ‰€ä»¥ éœ€è¦æœ‰ä¸€ä¸ªç»„ä»¶æ¥å›Šæ‹¬è¿™äº›è·¯ç”±ï¼Œè¿™é‡Œçš„<App/>ç»„ä»¶å°±æœ‰è¿™ä¸ªä½œç”¨
+```
 
+## UIç»„ä»¶ä½¿ç”¨
 
+## é‡è¦çŸ¥è¯†ç‚¹
 
-#### 3. ²Ëµ¥×é¼ş¿ª·¢
+#### onClickäº‹ä»¶
 
-#### 4. Í·²¿×é¼ş¿ª·¢
+```
+ä¸å½“ï¼š<button onClick={this.handleOpen('params')}></button>  è¿™æ ·å­ä¼šç›´æ¥è°ƒç”¨è¿™ä¸ªå‡½æ•°çš„
+æ­£ç¡®ï¼š<button onClick={('params')=>this.handleOpen}></button>  åŒ¿åå‡½æ•°ä¼ å‚ä¸ä¼šä¸»åŠ¨è°ƒç”¨
+```
 
-jsonp»ñÈ¡¿çÓò£º»ñÈ¡°Ù¶ÈµÄÌìÆø
+#### [type]:true
 
-axios²»ÄÜ¿çÓò£¬Ö»»áÊÇÓÃget,post
+[type]ï¼šä¼šæŠŠtypeå½“æˆå˜é‡
 
-~~~
-
-~~~
-
-
-
-#### 5. µ×²¿×é¼ş¿ª·¢
-
-
-
-## Â·ÓÉ
-
-Â·ÓÉµÄ»ù±¾ÖªÊ¶ Çë¿´ÎÄµµ¡¶react-router-dom.md¡·
-
-ÕâÀïÖ÷ÒªĞ´ÏîÄ¿ÖĞµÄÂ·ÓÉ
-
-~~~
-ÒòÎª»áÓĞ¶à¸öÂ·ÓÉ£¬¸ùÂ·ÓÉÒ²»áÓĞÍ¬¼¶Â·ÓÉ£¬Èç/login, / , /main/£¬ËùÒÔ ĞèÒªÓĞÒ»¸ö×é¼şÀ´ÄÒÀ¨ÕâĞ©Â·ÓÉ£¬ÕâÀïµÄ<App/>×é¼ş¾ÍÓĞÕâ¸ö×÷ÓÃ
-~~~
-
-
-
-
-
-
-
-## UI×é¼şÊ¹ÓÃ
-
-
-
-
-
-
-
-##  ÖØÒªÖªÊ¶µã
-
-#### onClickÊÂ¼ş
-
-~~~
-²»µ±£º<button onClick={this.handleOpen('params')}></button>  ÕâÑù×Ó»áÖ±½Óµ÷ÓÃÕâ¸öº¯ÊıµÄ
-ÕıÈ·£º<button onClick={('params')=>this.handleOpen}></button>  ÄäÃûº¯Êı´«²Î²»»áÖ÷¶¯µ÷ÓÃ
-~~~
-
-
-
-####  [type]:true
-
-[type]£º»á°Ñtypeµ±³É±äÁ¿
-
-~~~
+```
 <button onClick={('param1')=>this.handleOpen}></button>  
 <button onClick={('param2')=>this.handleOpen}></button>  
 <button onClick={('param3')=>this.handleOpen}></button>  
@@ -429,7 +421,7 @@ handleOpen = (type)=>{
         [type]:true
     })
     
-    /*ÏÂÃæÕâÖÖÓÃifÅĞ¶ÏµÄ·½·¨ºÜ±¿
+    /*ä¸‹é¢è¿™ç§ç”¨ifåˆ¤æ–­çš„æ–¹æ³•å¾ˆç¬¨
     if(type=='1'){
         this.setState({
             param1:true
@@ -437,130 +429,114 @@ handleOpen = (type)=>{
     }....
     */
 }
-~~~
-
-
+```
 
 #### yarn add less@^2.7.3
 
-~~~
-yarn add less@^2.7.3    '^'±íÊ¾Ö»ÒªÊÇ>2,<3µÄ´ó°æ±¾¶¼¿ÉÒÔÉı¼¶
-~~~
-
-
+```
+yarn add less@^2.7.3    '^'è¡¨ç¤ºåªè¦æ˜¯>2,<3çš„å¤§ç‰ˆæœ¬éƒ½å¯ä»¥å‡çº§
+```
 
 #### import {xxx} from '@/action';
 
-~~~
+```
 import {fetchData,receiveData} from '@/action';
-~~~
+```
 
-from?'/@action'µÄ?¡®@¡¯ÊÇÖ¸ÏòÄÄÀïµÄÄØ 
+from?'/@action'çš„?â€˜@â€™æ˜¯æŒ‡å‘å“ªé‡Œçš„å‘¢
 
-´ğ£ºwebpackÀïÃæaliasÅäÖÃµÄ?Ò»°ãÂ·¾¶ÊÇsrc 
+ç­”ï¼šwebpacké‡Œé¢aliasé…ç½®çš„?ä¸€èˆ¬è·¯å¾„æ˜¯src
 
-![1547274877055](assets/1547274877055.png)
+[![1547274877055](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547274877055.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547274877055.png)
 
+#### encodeç¼–ç 
 
+```
+encodeURIComponent('åŒ—äº¬')
+```
 
-#### encode±àÂë
+æ§åˆ¶å°è¾“å‡º ï¼š
 
-~~~
+[![1547283087762](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547283087762.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547283087762.png)
 
-~~~
+### JSONPè·¨åŸŸ -- ç™¾åº¦å¤©æ°”API
 
-¿ØÖÆÌ¨Êä³ö £º
+ç™¾åº¦æœç´¢ï¼šç™¾åº¦å¤©æ°”API æŸ¥çœ‹æ¥å£æ–‡æ¡£
 
- ![1547283087762](assets/1547283087762.png)
+æ¥å£æ–‡æ¡£ï¼š<https://www.cnblogs.com/wangchengshen/p/3668946.html>
 
+åˆ›å»ºåº”ç”¨è·å–Akï¼š<http://lbsyun.baidu.com/apiconsole/key/create>
 
+ç„¶åè°ƒç”¨è¿™ä¸ªæ¥å£æ›¿æ¢akï¼š
 
-### JSONP¿çÓò  --  °Ù¶ÈÌìÆøAPI
+```
+ç™¾åº¦å¤©æ°”APIæ¥å£
+http://api.map.baidu.com/telematics/v3/weather?location=beijing&output=json&ak=3p49MVra6urFRGOT9s8UBWr2
 
-°Ù¶ÈËÑË÷£º°Ù¶ÈÌìÆøAPI ²é¿´½Ó¿ÚÎÄµµ
+```
 
-½Ó¿ÚÎÄµµ£ºhttps://www.cnblogs.com/wangchengshen/p/3668946.html
-
-´´½¨Ó¦ÓÃ»ñÈ¡Ak£ºhttp://lbsyun.baidu.com/apiconsole/key/create
-
-È»ºóµ÷ÓÃÕâ¸ö½Ó¿ÚÌæ»»ak£º
-
-~~~
-
-~~~
-
-
-
-![1547294841197](assets/1547294841197.png)
-
-
+[![1547294841197](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547294841197.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547294841197.png)
 
 ##### jsonp
 
-**¿çÓòÌõ¼ş£ºĞ­Òé¡¢ÓòÃû¡¢¶Ë¿ÚÏàÍ¬**
+**è·¨åŸŸæ¡ä»¶ï¼šåè®®ã€åŸŸåã€ç«¯å£ç›¸åŒ**
 
-Ö±½Óµ÷ÓÃ°Ù¶ÈAPI½Ó¿Ú»áÉæ¼°¿çÓò£¬ËùÒÔÎÒÃÇĞèÒªÍ¨¹ıJSONPÊµÏÖ¿çÓò
+ç›´æ¥è°ƒç”¨ç™¾åº¦APIæ¥å£ä¼šæ¶‰åŠè·¨åŸŸï¼Œæ‰€ä»¥æˆ‘ä»¬éœ€è¦é€šè¿‡JSONPå®ç°è·¨åŸŸ
 
-~~~
+```
+yarn add jsonp --save
+```
 
-~~~
+axiosæœ¬èº«åªæ”¯æŒget,postï¼Œput ,deleteç­‰çš„è¯·æ±‚ï¼Œä½†ä¸æ”¯æŒä¸­åŸŸ
 
-axios±¾ÉíÖ»Ö§³Öget,post£¬put ,deleteµÈµÄÇëÇó£¬µ«²»Ö§³ÖÖĞÓò
+- å®ç°è°ƒç”¨å¤©æ°”æ¥å£
 
-- ÊµÏÖµ÷ÓÃÌìÆø½Ó¿Ú
+#### è°ƒè¯•Promise
 
-#### µ÷ÊÔPromise
+æˆ‘ä»¬å†™ä¸‹éœ€è¦è°ƒè¯•çš„ä»£ç ï¼š
 
-ÎÒÃÇĞ´ÏÂĞèÒªµ÷ÊÔµÄ´úÂë£º
+[![1547297808763](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547297808763.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547297808763.png)
 
-![1547297808763](assets/1547297808763.png)
+[![1547297824738](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547297824738.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547297824738.png)
 
- ![1547297824738](assets/1547297824738.png)
+- F12åœ¨æµè§ˆå™¨æ‰“å¼€è°ƒè¯•çª—å£
+- ctrl+p
+- è¾“å…¥ä½ çš„æ–‡ä»¶å¦‚header/index.jså°±ä¼šæ‰¾åˆ°ä½ çš„ç»„ä»¶Header/index.js
 
-+ F12ÔÚä¯ÀÀÆ÷´ò¿ªµ÷ÊÔ´°¿Ú
-+ ctrl+p
-+ ÊäÈëÄãµÄÎÄ¼şÈçheader/index.js¾Í»áÕÒµ½ÄãµÄ×é¼şHeader/index.js
+å¯ä»¥è¿›è¡Œæ–­ç‚¹è°ƒè¯•
 
-?        ¿ÉÒÔ½øĞĞ¶Ïµãµ÷ÊÔ
+- ctrl+p æ‰“å¼€ä½ çš„axios/index.js çœ‹æ˜¯å¦æœ‰è¿”å›å€¼ ï¼Œéœ€è¦æ‰“æ–­ç‚¹è°ƒè¯•
+- æˆ–è€…å¯ä»¥é€šè¿‡æ§åˆ¶å°NetWorkæŸ¥çœ‹ç½‘ç»œçš„è¿”å›çŠ¶æ€
 
-- ctrl+p ´ò¿ªÄãµÄaxios/index.js ¿´ÊÇ·ñÓĞ·µ»ØÖµ £¬ĞèÒª´ò¶Ïµãµ÷ÊÔ
-- »òÕß¿ÉÒÔÍ¨¹ı¿ØÖÆÌ¨NetWork²é¿´ÍøÂçµÄ·µ»Ø×´Ì¬
+[![1547297627539](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547297627539.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547297627539.png)
 
-![1547297627539](assets/1547297627539.png)
+å¯ä»¥çœ‹åˆ°å®é™…å·²ç»è¿”å›æœ‰å€¼ äº†
 
-¿ÉÒÔ¿´µ½Êµ¼ÊÒÑ¾­·µ»ØÓĞÖµ ÁË
+æˆ‘ä»¬éœ€è¦çš„å‚æ•°ä¸ºï¼š
 
-ÎÒÃÇĞèÒªµÄ²ÎÊıÎª£º
+[![1547297751954](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547297751954.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547297751954.png)
 
-![1547297751954](assets/1547297751954.png)
+- å¯ä»¥åœ¨ä»£ç ä¸­æ‰“æ–­ç‚¹ â€˜debugger'
 
-+ ¿ÉÒÔÔÚ´úÂëÖĞ´ò¶Ïµã ¡®debugger'
+ä»£ç ï¼š
 
-´úÂë£º
+[![1547298075855](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547298075855.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547298075855.png)
 
- ![1547298075855](assets/1547298075855.png)
+F12åœ¨çª—å£å°±å¯ä»¥åœ¨å‰é¢çœ‹åˆ°å®ƒçš„è¿”å›å€¼ äº†ï¼Œè¿™æ ·ä¹Ÿå¯ä»¥æ›´å¥½åœ°å¯¹è¿”å›å€¼ä½œåˆ¤æ–­ å’Œå–å€¼
 
-F12ÔÚ´°¿Ú¾Í¿ÉÒÔÔÚÇ°Ãæ¿´µ½ËüµÄ·µ»ØÖµ ÁË£¬ÕâÑùÒ²¿ÉÒÔ¸üºÃµØ¶Ô·µ»ØÖµ×÷ÅĞ¶Ï ºÍÈ¡Öµ 
+[![1547298002653](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547298002653.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547298002653.png)
 
-![1547298002653](assets/1547298002653.png)
+PromiseçŸ¥è¯†ç‚¹è°ƒè¯•
 
+--é“¾å¼è°ƒç”¨,ä¸ç”¨é€šè¿‡callbackå›è°ƒå±‚å±‚è°ƒç”¨ï¼Œè€Œæ˜¯é€šè¿‡return Promiseè¿”å›åï¼Œé€šè¿‡.thenæ¥æ”¶è¿”å›çš„ç»“æœ
 
+resolveæ˜¯æˆåŠŸä¹‹åæŠŠæ•°æ®è¿”å›å›å»ï¼Œrejectæ˜¯å¤±è´¥ä¹‹åæŠŠæ•°æ®è¿”å›å›å»
 
+Promiseæœ€å¤§çš„å¥½å¤„å°±æ˜¯å¯ä»¥é“¾å¼è°ƒç”¨
 
+é€šè¿‡.thenæ¥æ¥æ”¶Promiseè¿”å›çš„çŠ¶æ€
 
-PromiseÖªÊ¶µãµ÷ÊÔ   
-
---Á´Ê½µ÷ÓÃ,²»ÓÃÍ¨¹ıcallback»Øµ÷²ã²ãµ÷ÓÃ£¬¶øÊÇÍ¨¹ıreturn Promise·µ»Øºó£¬Í¨¹ı.then½ÓÊÕ·µ»ØµÄ½á¹û
-
-
-
-resolveÊÇ³É¹¦Ö®ºó°ÑÊı¾İ·µ»Ø»ØÈ¥£¬rejectÊÇÊ§°ÜÖ®ºó°ÑÊı¾İ·µ»Ø»ØÈ¥
-
-Promise×î´óµÄºÃ´¦¾ÍÊÇ¿ÉÒÔÁ´Ê½µ÷ÓÃ
-
-Í¨¹ı.thenÀ´½ÓÊÕPromise·µ»ØµÄ×´Ì¬
-
-~~~javascript
+```
 import JsonP from 'jsonp'
 export default class Axios{
     static jsonp(options){
@@ -581,12 +557,12 @@ export default class Axios{
 
 //-----------------------------------------------
     getWeatherAPIDate(){
-        /*°Ù¶ÈAPI½Ó¿Ú + jsonp·â×°µÄº¯ÊıreturnµÄpromise*/
-        let city='±±¾©';
+        /*ç™¾åº¦APIæ¥å£ + jsonpå°è£…çš„å‡½æ•°returnçš„promise*/
+        let city='åŒ—äº¬';
         Axios.jsonp({
             url:'http://api.map.baidu.com/telematics/v3/weather?location='+encodeURIComponent(city)+'&output=json&ak=3p49MVra6urFRGOT9s8UBWr2'
         }).then((res)=>{
-            /*Í¨¹ı.thenÀ´½ÓÊÕ jsonp·â×°µÄº¯ÊıµÄPromiseµÄ·µ»ØÖµ */
+            /*é€šè¿‡.thenæ¥æ¥æ”¶ jsonpå°è£…çš„å‡½æ•°çš„Promiseçš„è¿”å›å€¼ */
             if(res.status === 'success'){
                 let data = res.results[0].weather_data[0];
                 this.setState({
@@ -596,30 +572,47 @@ export default class Axios{
             }
         })
     }
+```
 
-~~~
+#### CSS3ç”»ä¸‰è§’å½¢
 
+```less
 
+    .breadcrumb{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        border-top: 1px solid #f99c00;
+        .breadcrumb-title{
+            text-align:center;
+            font-size:@fontC;
+            &:after{
+                position: absolute;
+                content: '';
+                left:115px;
+                top:39px;
+                border-top: 9px solid @colorM;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+            }
+        }
+     }
+```
 
-#### CSS3»­Èı½ÇĞÎ
+[![1547289720755](https://github.com/sbwxffnhc/react-antd/raw/master/assets/1547289720755.png)](https://github.com/sbwxffnhc/react-antd/blob/master/assets/1547289720755.png)
 
-~~~less
-
-~~~
-
-  ![1547289720755](assets/1547289720755.png)
-
-
-
-#### Ìí¼ÓÈÕÆÚ
+#### æ·»åŠ æ—¥æœŸ
 
 ~~~javascript
+import React from 'react';
+
+export default{
+    formateDate(time){
+        if(!time) return '';
+        let date = new Date(time);
+        return date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate()+' '+date.getHours()+':'+date.getMinutes()+':'+date.getSeconds();
+    }
+}
 
 ~~~
-
-
-
-
-
-
 

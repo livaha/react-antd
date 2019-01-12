@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ReactLife from './page/demo/ReactLife';
-import Home from './page/route_demo/route1/Home'
-import Router from './page/route_demo/route4/router'
-import Buttons from './page/ui/buttons'
+import ReactLife from './pages/demo/ReactLife';
+import Home from './pages/route_demo/route1/Home'
+import Router from './pages/route_demo/route4/router'
+import Buttons from './pages/ui/buttons'
 import Admin from './admin'
 import * as serviceWorker from './serviceWorker';
 
