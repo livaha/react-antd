@@ -358,6 +358,16 @@ webpack是从下往上一个一个来执行的，
 
 #### 4. 头部组件开发
 
+jsonp获取跨域：获取百度的天气
+
+axios不能跨域，只会是用get,post
+
+~~~
+
+~~~
+
+
+
 #### 5. 底部组件开发
 
 
@@ -431,9 +441,40 @@ from?'/@action'的?‘@’是指向哪里的呢
 
 
 
+#### encode编码
+
+~~~
+
+~~~
+
+控制台输出 ：
+
+ ![1547283087762](assets/1547283087762.png)
+
+
+
+#### 调试  + Promise
+
+Promise知识点调试   
+
+--链式调用,不用通过callback回调层层调用，而是通过return Promise返回后，通过.then接收返回的结果
+
+resolve是成功之后返回回去，reject是失败之后返回回去
+
+~~~
+
+~~~
 
 
 
 
 
+在代码里写debugger直接打断点
 
+ctrl+p ,写入目录axios/index.js
+
+在控制台，NetWork查看，源码调试
+
+
+
+jsonp , 跨域会有个callback， 

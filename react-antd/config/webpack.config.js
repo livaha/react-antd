@@ -121,8 +121,8 @@ module.exports = function(webpackEnv) {
       }
       if (preProcessor === "less-loader") {
         loader.options.modifyVars = {
-          /*'primary-color': '#272e4c',
-          'theme':'dark'*/
+          'primary-color': '#2c2cb3',
+          /*'theme':'dark'*/
         }
         loader.options.javascriptEnabled = true
       }
