@@ -121,7 +121,8 @@ module.exports = function(webpackEnv) {
       }
       if (preProcessor === "less-loader") {
         loader.options.modifyVars = {
-          'primary-color': '#121394',
+          /*'primary-color': '#272e4c',
+          'theme':'dark'*/
         }
         loader.options.javascriptEnabled = true
       }
@@ -283,6 +284,8 @@ module.exports = function(webpackEnv) {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
+        // 全局相对路径别名，处理相对路径过长和繁琐问题
+        '@': paths.appSrc
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding

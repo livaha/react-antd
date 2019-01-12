@@ -121,6 +121,10 @@ yarn add react-router
 +-- public/                                 
 |   --- index.html							---首页入口html文件
 +-- src/                                    ---核心代码目录
+|   +-- admin.js                          ---主结构和代码
+|   +-- config                          ---菜单配置，及其他变量配置
+|   +-- components                         ---组件
+|   |    +--                       ---
 |   +-- pages                          ---测试demo
 |   |    +-- demo                      ---生命周期测试demo
 |   |    |    --- ...   
@@ -133,7 +137,7 @@ yarn add react-router
 |   |    |    --- ...   
 |   |    +-- forms                          ---表单组件
 |   |    |    --- ...   
-|   |    +-- pages                          ---页面组件
+|   |    +--                           ---页面组件
 |   |    |    --- ...   
 |   |    +-- tables                         ---表格组件
 |   |    |    --- ...   
@@ -318,13 +322,37 @@ webpack是从下往上一个一个来执行的，
 实现按需加载：babel-plugin-import
 配置文件不动，在暴露的文件中的js中加个插件
 
-一个小知道
-yarn add less@^2.7.3    '^'表示只要是>2,<3的大版本都可以升级
 ~~~
 
 
 
 #### 2. 项目主页结构开发
+
+##### 主页结构定义
+
+- 页面结构定义
+- 目录结构定义 
+- 栅格系统使用
+
+--------------------------------------------------------------------
+
+- 利用栅格系统来布局分层 
+
+?       我们用的是Antd的栅格：https://ant.design/components/grid-cn/
+
++ 菜单配置：一般来说菜单权限配置是由服务端返回的数据进行权限匹配的，而现在我们先是前端控制 --- > 通过服务端接口返回权限列表，在前端用递归的方式实现菜单的渲染
+
+?       菜单配置放在config文件夹中的menuConfig.js
+
+
+
++ 修改webpack..config.js里面alias配置，使指定路径名src全局路径的别名 
+
+~~~
+
+~~~
+
+
 
 #### 3. 菜单组件开发
 
@@ -381,11 +409,25 @@ handleOpen = (type)=>{
 
 
 
+#### yarn add less@^2.7.3
+
+~~~
+yarn add less@^2.7.3    '^'表示只要是>2,<3的大版本都可以升级
+~~~
 
 
 
+#### import {xxx} from '@/action';
 
+~~~
+import {fetchData,receiveData} from '@/action';
+~~~
 
+from?'/@action'的?‘@’是指向哪里的呢 
+
+答：webpack里面alias配置的?一般路径是src 
+
+![1547274877055](assets/1547274877055.png)
 
 
 
