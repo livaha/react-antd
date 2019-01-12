@@ -376,6 +376,14 @@ axios不能跨域，只会是用get,post
 
 ## UI组件使用
 
+
+
+
+
+
+
+##  重要知识点
+
 #### onClick事件
 
 ~~~
@@ -453,31 +461,129 @@ from?'/@action'的?‘@’是指向哪里的呢
 
 
 
-#### 调试  + Promise
+### JSONP跨域  --  百度天气API
 
-Promise知识点调试   
+百度搜索：百度天气API 查看接口文档
 
---链式调用,不用通过callback回调层层调用，而是通过return Promise返回后，通过.then接收返回的结果
+接口文档：https://www.cnblogs.com/wangchengshen/p/3668946.html
 
-resolve是成功之后返回回去，reject是失败之后返回回去
+创建应用获取Ak：http://lbsyun.baidu.com/apiconsole/key/create
 
-~~~javascript
+然后调用这个接口替换ak：
+
+~~~
 
 ~~~
 
 
 
-
-
-在代码里写debugger直接打断点
-
-ctrl+p ,写入目录axios/index.js
-
-在控制台，NetWork查看，源码调试
+![1547294841197](assets/1547294841197.png)
 
 
 
-jsonp , 跨域会有个callback， 
+##### jsonp
+
+**跨域条件：协议、域名、端口相同**
+
+直接调用百度API接口会涉及跨域，所以我们需要通过JSONP实现跨域
+
+~~~
+
+~~~
+
+axios本身只支持get,post，put ,delete等的请求，但不支持中域
+
+- 实现调用天气接口
+
+#### 调试Promise
+
+我们写下需要调试的代码：
+
+![1547297808763](assets/1547297808763.png)
+
+ ![1547297824738](assets/1547297824738.png)
+
++ F12在浏览器打开调试窗口
++ ctrl+p
++ 输入你的文件如header/index.js就会找到你的组件Header/index.js
+
+?        可以进行断点调试
+
+- ctrl+p 打开你的axios/index.js 看是否有返回值 ，需要打断点调试
+- 或者可以通过控制台NetWork查看网络的返回状态
+
+![1547297627539](assets/1547297627539.png)
+
+可以看到实际已经返回有值 了
+
+我们需要的参数为：
+
+![1547297751954](assets/1547297751954.png)
+
++ 可以在代码中打断点 ‘debugger'
+
+代码：
+
+ ![1547298075855](assets/1547298075855.png)
+
+F12在窗口就可以在前面看到它的返回值 了，这样也可以更好地对返回值作判断 和取值 
+
+![1547298002653](assets/1547298002653.png)
+
+
+
+
+
+Promise知识点调试   
+
+--链式调用,不用通过callback回调层层调用，而是通过return Promise返回后，通过.then接收返回的结果
+
+
+
+resolve是成功之后把数据返回回去，reject是失败之后把数据返回回去
+
+Promise最大的好处就是可以链式调用
+
+通过.then来接收Promise返回的状态
+
+~~~javascript
+import JsonP from 'jsonp'
+export default class Axios{
+    static jsonp(options){
+        return new Promise((resolve,reject)=>{
+            JsonP(options.url,{
+                param:'callback'
+            },function(err,response){
+                if(response.status == 'success'){
+                    resolve(response);
+                }
+                else{
+                    reject(response.message);
+                }
+            })
+        })
+    }
+}
+
+//-----------------------------------------------
+    getWeatherAPIDate(){
+        /*百度API接口 + jsonp封装的函数return的promise*/
+        let city='北京';
+        Axios.jsonp({
+            url:'http://api.map.baidu.com/telematics/v3/weather?location='+encodeURIComponent(city)+'&output=json&ak=3p49MVra6urFRGOT9s8UBWr2'
+        }).then((res)=>{
+            /*通过.then来接收 jsonp封装的函数的Promise的返回值 */
+            if(res.status === 'success'){
+                let data = res.results[0].weather_data[0];
+                this.setState({
+                    dayPictureUrl:data.dayPictureUrl,
+                    weather:data.weather
+                })
+            }
+        })
+    }
+
+~~~
 
 
 
