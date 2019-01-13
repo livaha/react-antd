@@ -79,6 +79,16 @@ const menuList = [
                 type:'',
             },
             {
+                title: '排序表格',
+                key: '/table/sort',
+                type:'',
+            },
+            {
+                title: 'mock表格',
+                key: '/table/mock',
+                type:'',
+            },
+            {
                 title: '高级表格',
                 key: '/table/high',
                 type:'',
