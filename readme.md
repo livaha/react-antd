@@ -415,6 +415,23 @@ export default App;
 
 
 
+## AntD Form组件
+
+主要是登陆、注册页面
+
+~~~
+获取getFieldDecorator：
+const ｛getFieldDecorator｝ = this.props.form;   -- 固定语法，创建语法后通过这个就可以来获取
+
+getFieldDecorator作用：帮助我们做表单封装
+~~~
+
+具体可以在antd官网form表单中看到用法：https://ant.design/components/form-cn/#components-form-demo-validate-other
+
+
+
+
+
 ## 重要知识点
 
 #### onClick事件
