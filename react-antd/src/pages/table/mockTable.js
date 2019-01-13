@@ -31,7 +31,8 @@ export default class BasicTable extends React.Component {
             data:{
                 params:{
                     page:1
-                }
+                },
+                isShowLoading:true
             }
         }).then((res)=>{
             if(res.code == 0){
@@ -46,7 +47,8 @@ export default class BasicTable extends React.Component {
             axios.ajax_post({
                 url:'/post/test',
                 data:{
-                    auth:"data"
+                    auth:"data",
+                    isShowLoading:true
                 }
             }).then((res)=>{
                 if(res.code == 0){

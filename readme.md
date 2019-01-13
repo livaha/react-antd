@@ -444,6 +444,224 @@ getFieldDecorator作用：帮助我们做表单封装
 
 
 
+#### 1. 项目工程化-Mock数据
+
+www.easy-mock.com
+
+学会利用easy-mock模拟数据
+
+~~~
+{
+  "code": 0,
+  "message": "",
+  "result": {
+    "list|10": [{
+      "id|+1": 1,
+      "username": "@cname",
+      "sex|1-2": 1,
+      "state|1-5": 1,
+      "interest|1-8": 1,
+      "isMarried|0-1": 1,
+      "birthday": "2019-01-13",
+      "address": "深圳市南山区",
+      "time": "19:00:00"
+    }],
+    page: 1,
+    page_size: 10,
+    total_count: 30
+  }
+}
+~~~
+
+#### 2. 项目工程化-Axios封装
+
+封装：
+
+~~~javascript
+import JsonP from 'jsonp'
+import axios from 'axios'
+import { Modal } from 'antd'
+export default class Axios{
+    /*将第三方插件再封装 */
+    static ajax_get(options){
+        let baseApi = 'https://easy-mock.com/mock/5c3b1896d3b9046e1aedbe56/api';
+        return new Promise((resolve,reject)=>{
+            axios({
+                url:options.url,
+                method:'get',
+                baseURL:baseApi,
+                timeout:5000,
+                params:(options.data && options.data.params) || ''
+            }).then((response)=>{
+                if(response.status == '200'){
+                    let res = response.data;
+                    if(res.code == '0'){
+                        resolve(res);
+                    }else{
+                        Modal.info({
+                            title:"提示",
+                            content:res.message || '返回数据错误'
+                        })
+                    }
+                }else{
+                    reject(response);
+                }
+            })
+        })
+    }
+
+    
+    static ajax_post(options){
+        let baseApi = 'https://easy-mock.com/mock/5c3b1896d3b9046e1aedbe56/api';
+        return new Promise((resolve,reject)=>{
+            axios({
+                url:options.url,
+                method:'post',
+                baseURL:baseApi,
+                timeout:5000,
+                data: options.data
+            }).then((response)=>{
+                if(response.status == '200'){
+                    let res = response.data;
+                    if(res.code == '0'){
+                        resolve(res);
+                    }else{
+                        //debugger
+                        Modal.info({
+                            title:"提示",
+                            content:(res.message) || '返回数据错误'
+                        })
+                    }
+                }else{
+                    reject(response);
+                }
+            })
+        })
+    }
+}
+~~~
+
+调用：
+
+~~~javascript
+
+    //动态获取mock数据
+    request_get = ()=>{
+        axios.ajax_get({
+            url:'/table/list',
+            data:{
+                params:{
+                    page:1
+                }
+            }
+        }).then((res)=>{
+            if(res.code == 0){
+                this.setState({
+                    dataSource : res.result
+                })
+            }
+        })
+    }
+        //动态获取mock数据
+        request_post = ()=>{
+            axios.ajax_post({
+                url:'/post/test',
+                data:{
+                    auth:"data"
+                }
+            }).then((res)=>{
+                if(res.code == 0){
+                    this.setState({
+                        dataSource : res.result
+                    })
+                }
+            })
+        }
+~~~
+
+
+
+#### 3. 项目工程化-Loading处理、错误拦截
+
+添加loading(加载中...):
+
+~~~
+1. 将loading放到public的全局index.js中
+2. 在common.less中引入 loading的less
+3. 在封装的axios的请求中插入loading
+4. 通过请求时添加一个flag来判断是否来显示loading
+~~~
+
+Loading实现：
+
+~~~javascript
+
+    static ajax_post(options){
+        /*加载Loading  -- isShowLoading=true时加载 */
+        let loading;
+        if(options.data && options.data.isShowLoading !== false){
+            loading = document.getElementById('ajaxLoading');
+            loading.style.display = 'block';
+        }
+        let baseApi = 'https://easy-mock.com/mock/5c3b1896d3b9046e1aedbe56/api';
+        return new Promise((resolve,reject)=>{
+            axios({
+                url:options.url,
+                method:'post',
+                baseURL:baseApi,
+                timeout:5000,
+                data: options.data
+            }).then((response)=>{
+                /*消除Loading*/
+                if (options.data && options.data.isShowLoading !== false) {
+                    loading = document.getElementById('ajaxLoading');
+                    loading.style.display = 'none';
+                }
+                if(response.status == '200'){
+                    let res = response.data;
+                    if(res.code == '0'){
+                        resolve(res);
+                    }else{
+                        //debugger
+                        Modal.info({
+                            title:"提示",
+                            content:(res.message) || '返回数据错误'
+                        })
+                    }
+                }else{
+                    reject(response);
+                }
+            })
+        })
+    }
+~~~
+
+调用 ：
+
+~~~javascript
+
+        //动态获取mock数据
+        request = ()=>{
+            axios.ajax_post({
+                url:'/post/test',
+                data:{
+                    auth:"data",
+                    isShowLoading:true
+                }
+            }).then((res)=>{
+                if(res.code == 0){
+                    this.setState({
+                        dataSource : res.result
+                    })
+                }
+            })
+        }
+~~~
+
+
+
+
+
 
 
 ## 重要知识点
