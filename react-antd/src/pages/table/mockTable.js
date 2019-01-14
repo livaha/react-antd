@@ -4,7 +4,7 @@ import axios from '@/axios'
 
 
 
-export default class BasicTable extends React.Component {
+export default class MockTable extends React.Component {
 
     state = {
         
@@ -12,20 +12,8 @@ export default class BasicTable extends React.Component {
     componentDidMount(){
         this.request();
     }
-    /*
-    request=()=>{
-        let baseUrl = 'https://easy-mock.com/mock/5c3b1896d3b9046e1aedbe56/api';
-        Axios.get(baseUrl + '/table/list').then((res)=>{
-            console.log(JSON.stringify(res));
-            //debugger;
-            if(res.status == 200 && res.data.code == 0){
-                this.setState({data:res.data.result})
-            }
-        })
-    }*/
-
     //动态获取mock数据
-    request_get = ()=>{
+    request = ()=>{
         axios.ajax_get({
             url:'/table/list',
             data:{
@@ -42,22 +30,7 @@ export default class BasicTable extends React.Component {
             }
         })
     }
-        //动态获取mock数据
-        request = ()=>{
-            axios.ajax_post({
-                url:'/post/test',
-                data:{
-                    auth:"data",
-                    isShowLoading:true
-                }
-            }).then((res)=>{
-                if(res.code == 0){
-                    this.setState({
-                        dataSource : res.result
-                    })
-                }
-            })
-        }
+
     render(){
             
         const columns = [

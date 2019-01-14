@@ -92,6 +92,16 @@ const menuList = [
                 title: '高级表格',
                 key: '/table/high',
                 type:'',
+            },
+            {
+                title: '列选择',
+                key: '/table/row',
+                type:'',
+            },
+            {
+                title: '排序/加载',
+                key: '/table/loading',
+                type:'',
             }
         ]
     },

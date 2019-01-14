@@ -17,6 +17,8 @@ import BasicTable from './pages/table/basicTable'
 import SortTable from './pages/table/sortTable'
 import MockTable from './pages/table/mockTable'
 import HighTable from './pages/table/highTable'
+import RowSelection from './pages/table/rowSelection'
+import LoadingTable from './pages/table/loadingTable'
 import NoMatch from './pages/noMatch'
 
 export default class IRouter extends React.Component {
@@ -45,6 +47,8 @@ export default class IRouter extends React.Component {
                             <Route path="/table/sort" component={SortTable} />
                             <Route path="/table/mock" component={MockTable} />
                             <Route path="/table/high" component={HighTable} />
+                            <Route path="/table/row" component={RowSelection} />
+                            <Route path="/table/loading" component={LoadingTable} />
                             <Route component={NoMatch} />
 
                         </Switch>
