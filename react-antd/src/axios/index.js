@@ -94,6 +94,16 @@ export default class Axios{
                 }else{
                     reject(response);
                 }
+            }).catch(() => {
+                /*消除Loading*/
+                if (loading) {
+                    loading.style.display = 'none';
+                }
+                Modal.info({
+                    title:"提示",
+                    content:'返回数据错误'
+                })
+            
             })
         })
     }
