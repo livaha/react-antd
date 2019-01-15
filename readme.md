@@ -682,7 +682,21 @@ selectedRowKeys     onRow
 
 
 
+## 城市管理
 
+select , 表单，取值
+
+自动获取值 
+
+Form.creat创建对象cigyForm后自动封装表单
+
+我们将每个组件定义到getFiledDecorator里，
+
+它会自动处理双向绑定功能，选择完后会自动把值 保存进去
+
+然后我们通过wrapComponent去获取保存的ref这种对象
+
+最后通过对象cigyForm去取我们的value值  getFiledsValue然后进行提交
 
 
 

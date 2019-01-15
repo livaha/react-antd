@@ -24,7 +24,7 @@ export default class MockTable extends React.Component {
             }
         }).then((res)=>{
             if(res.code == 0){
-                debugger
+                //debugger
                 this.setState({
                     dataSource : [res.result]
                 })
