@@ -15,7 +15,7 @@ export default class MockTable extends React.Component {
     //动态获取mock数据
     request = ()=>{
         axios.ajax_get({
-            url:'/table/list',
+            url:'/table/list2',
             data:{
                 params:{
                     page:1
@@ -24,8 +24,9 @@ export default class MockTable extends React.Component {
             }
         }).then((res)=>{
             if(res.code == 0){
+                debugger
                 this.setState({
-                    dataSource : res.result
+                    dataSource : [res.result]
                 })
             }
         })
