@@ -10,15 +10,11 @@ let list = res.result.item_list.map((item,index)=>{
 
 
 
-## antd 的Select及示例代码
+## 时间戳转化为动态时钟--moment
 
 ~~~jsx
 
 ~~~
-
-
-
-
 
 
 

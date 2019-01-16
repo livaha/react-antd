@@ -700,6 +700,31 @@ Form.creat创建对象cigyForm后自动封装表单
 
 
 
+~~~
+
+  
+  handleLocalTime=()=>{
+
+    let localTime = this.localTimeForm.props.form.getFieldsValue();
+    //这应该是填进来的数据，我们应该是直接创建
+    console.log(localTime)
+    
+    //设置文本框数据
+    this.localTimeForm.props.form.setFieldsValue({browser_time:'aaa'});
+    let localTime2 = this.localTimeForm.props.form.getFieldsValue();
+    //这应该是填进来的数据，我们应该是直接创建
+    console.log(localTime2)
+
+  }
+  
+~~~
+
+
+
+
+
+
+
 ## 项目工程化
 
 + 项目架构设计
