@@ -20,6 +20,7 @@ import HighTable from './pages/table/highTable'
 import RowSelection from './pages/table/rowSelection'
 import LoadingTable from './pages/table/loadingTable'
 import City from './pages/city/index'
+import Order from './pages/order/index'
 import NoMatch from './pages/noMatch'
 
 export default class IRouter extends React.Component {
@@ -51,6 +52,7 @@ export default class IRouter extends React.Component {
                             <Route path="/table/row" component={RowSelection} />
                             <Route path="/table/loading" component={LoadingTable} />
                             <Route path="/city" component={City} />
+                            <Route path="/order" component={Order} />
                             <Route component={NoMatch} />
 
                         </Switch>
