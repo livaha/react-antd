@@ -1,16 +1,23 @@
 @import './default.less';
 @import './loading.less';
+ul,li{
+    list-style: none;
+}
+.clearfix{
+    &::after{
+        content:' ';
+        clear:both;
+        display: block;
+        visibility: hidden;
+    }
+}
 .container{
-    display: flex;
     .nav-left{
-        width:16%;
-        min-width: 180px;
-        height: calc(100vh);/*100%的意思*/
-        background-color: #121f2b;
-        overflow: auto;
+        background-color:#001529;
+        color: #ffffff;
+        height: calc(100vh);
     }
     .main{
-        flex: 1;
         height: calc(100vh);
         background-color: @colorL;
         overflow: auto;
@@ -20,7 +27,6 @@
         padding: 20px;
     }
 }
-
 
 .content-wrap{
     background: #ffffff;

@@ -1,0 +1,38 @@
+@import './default.less';
+@import './loading.less';
+.container{
+    display: flex;
+    .nav-left{
+        width:16%;
+        min-width: 180px;
+        height: calc(100vh);/*100%的意思*/
+        background-color: #121f2b;
+        overflow: auto;
+    }
+    .main{
+        flex: 1;
+        height: calc(100vh);
+        background-color: @colorL;
+        overflow: auto;
+    }
+    .content{
+        position: relative;
+        padding: 20px;
+    }
+}
+
+
+.content-wrap{
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    margin-top: -3px;
+    .ant-table-wrapper{
+        margin-left: -1px;
+        margin-right: -2px;
+    }
+}
+.ant-card{
+    button{
+        margin-right: 10px;
+    }
+}

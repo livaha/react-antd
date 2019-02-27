@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Button, Table, Form, Select, Modal, DatePicker, message} from 'antd'
 import axios from '../../axios'
 import Utils from '../../utils/utils'
-import BaseForm from '@/components/BaseForm'
+import BaseForm from '../../components/BaseForm'
 const FormItem = Form.Item;
 const Option = Select.Option;
 export default class Order extends React.Component{
