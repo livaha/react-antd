@@ -65,6 +65,7 @@ class NavLeft extends React.Component {
                 <Menu
                     onClick={this.handleClick}
                     theme="dark"
+                    mode="inline"
                 >
                     { this.state.menuTreeNode }
                 </Menu>
