@@ -6,7 +6,7 @@ import Admin from './admin'
 import Home from './pages/home';
 import Buttons from './pages/ui/buttons'
 import Modals from './pages/ui/modals'
-import NoMatch from './pages/nomatch'
+//import NoMatch from './pages/nomatch'
 import Loadings from './pages/ui/loadings'
 import Notice from './pages/ui/notice'
 import Messages from './pages/ui/messages'
